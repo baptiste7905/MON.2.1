@@ -7,7 +7,7 @@ duration = 3  # Durée de chaque démonstration
 
 
 # 1. Texte avec différentes tailles
-titre = TextClip("Voici quelques options pour animer, styliser les textes avec Moviepy", fontsize=30, color='white').set_position(('center', 50)).set_duration(duration)
+titre = TextClip("Voici quelques options pour animer et styliser les textes avec Moviepy", fontsize=30, color='white').set_position(('center', 50)).set_duration(duration)
 text_size = TextClip("Taille : Petit", fontsize=30, color='white').set_position(('center', 150)).set_duration(duration)
 text_medium = TextClip("Taille : Moyen", fontsize=70, color='white').set_position(('center', 250)).set_duration(duration)
 text_large = TextClip("Taille : Grand", fontsize=120, color='white').set_position(('center', 400)).set_duration(duration)
@@ -15,9 +15,9 @@ text_large = TextClip("Taille : Grand", fontsize=120, color='white').set_positio
 size_demo = CompositeVideoClip([titre, text_size, text_medium, text_large], size=(video_width, video_height)).set_duration(duration)
 
 # 2. Texte avec différentes couleurs
-text_red = TextClip("Rouge", fontsize=70, color='red').set_position((200, 150)).set_duration(duration)
-text_green = TextClip("Vert", fontsize=70, color='green').set_position((200, 250)).set_duration(duration)
-text_blue = TextClip("Bleu", fontsize=70, color='blue').set_position((200, 350)).set_duration(duration)
+text_red = TextClip("Rouge", fontsize=70, color='red').set_position(('center', 150)).set_duration(duration)
+text_green = TextClip("Vert", fontsize=70, color='green').set_position(('center', 250)).set_duration(duration)
+text_blue = TextClip("Bleu", fontsize=70, color='blue').set_position(('center', 350)).set_duration(duration)
 
 color_demo = CompositeVideoClip([text_red, text_green, text_blue], size=(video_width, video_height)).set_duration(duration)
 
@@ -36,7 +36,7 @@ scrolling_vertical_text = TextClip("Défilement vertical", fontsize=70, color='c
 vertical_scroll_demo = scrolling_vertical_text.set_position(scroll_vertical)
 
 # 5. Texte animé (apparition en fondu)
-fade_text = TextClip("Apparition en fondu", fontsize=70, color='magenta').set_position("center").fadein(2).set_duration(duration)
+fade_text = TextClip("Apparition en fondu", fontsize=70, color='magenta').set_position("center").fadein(3).set_duration(duration)
 
 # 6. Texte avec rotation (rotation fluide)
 def rotate_text(t):
