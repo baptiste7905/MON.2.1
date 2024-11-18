@@ -33,9 +33,9 @@ sous_titre_intro = (TextClip("Baptiste Audouin",
 sommaire_text = TextClip("""
 Sommaire :
     
-    1. Intégration de textes
+    1. Intégration des textes
     
-    2. Animation des textes
+    2. Animations des textes
     
     3. Animations de vidéos
 """, fontsize=70, color='white', size=(1280 - 200, None), align="West")
